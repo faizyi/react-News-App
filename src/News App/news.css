@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.news-app .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+.header .news-topics{
+    margin-top: 15px;
+}
+.news-topics ul{
+    display: flex;
+    gap: 25px;
+}
+.news-topics ul li{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header .serach{
+    margin-top: 5px;
+}
+.header .serach form{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    transition: .5s ease;
+}
+.header .serach form:hover{
+    width: 300px;
+}
+.serach form input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+input::placeholder{
+    font-size: 15px;
+    color: black;
+}
+.serach button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+}
+.news-app .news-container{
+    display: flex;
+    justify-content: center;
+}
+.news-data{
+    margin-top: 100px;
+    width: 85%;
+}
+.news-data .firts-news{
+    display: flex;
+    gap: 30px;
+}
+.firts-news img{
+    width: 500px;
+    height: 330px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+.firts-news .news-text{
+    display: flex;
+    align-items: flex-start;
+}
+.news-header .name{
+    color: blue;
+}
+.news-text .news-date{
+    display: flex;
+    justify-content: flex-end;
+}
+.news-text .news-date span{
+    color: blue;
+}
+.latest-news h1{
+    color: red;
+    font-weight: bold;
+}
+.all-news{
+    display: inline;
+    margin-top: 20px;
+}
+.all-news div{
+    width: 22%;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.all-news div h2{
+    height: 100px;
+}
+.all-news div .time{
+    margin-left: 80px;
+}
+.all-news div img{
+    width: 260px;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+.all-news div .name,span{
+    color: blue;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1327px){
+    .all-news div{
+        margin-right: 99px;
+    }
+    .all-news div .time{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1025px){
+    .firts-news img{
+        width: 400px;
+        height: 230px;
+    }
+    .all-news div{
+        margin-right: 92px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 769px){
+    .firts-news img{
+        width: 620px;
+        height: 330px;
+    }
+    .news-data .firts-news{
+        display: inline-block;
+    } 
+    .all-news div{
+        margin-right: 170px;
+    }
+    .all-news div h2{
+        width: 250px;
+    }
+    .all-news div .time{
+        margin-left: 0px;
+        width: 190px;
+        /* background-color: black; */
+    }
+}
+@media screen and (min-width: 280px) and (max-width: 480px){
+    .news-data{
+        margin-top: 150px;
+    }
+    .firts-news img{
+        width: 330px;
+        height: 230px;
+    }
+    .news-data .firts-news{
+        display: inline-block;
+    } 
+    .all-news div{
+        text-align: center;
+        margin-right: 240px;
+    }
+    .all-news div img{
+        width: 300px;
+        height: 260px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .all-news div h2{
+        width: 300px;
+    }
+    .all-news div .time{
+        margin-left: 70px;
+        width: 290px;
+    }
+    .all-news{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 485px){
+    .header .serach{
+        position: fixed;
+        top: 57px;
+        left: 0%;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+    .header .serach form{
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 300px){
+    .header .serach{
+        position: fixed;
+        top: 57px;
+        left: 0%;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+    .header .serach form:hover{
+        margin-left: 10px;
+        width: 150px;
+    }
+    .news-data{
+        margin-top: 150px;
+    }
+    .firts-news img{
+        width: 230px;
+        height: 130px;
+    }
+    .news-data .firts-news{
+        display: inline-block;
+    } 
+    .all-news div{
+        text-align: center;
+        margin-right: 200px;
+    }
+    .all-news div img{
+        width: 250px;
+        height: 260px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .all-news div h2{
+        width: 220px;
+    }
+    .all-news div .time{
+        margin-left: 20px;
+        width: 290px;
+    }
+    .all-news{
+        display: flex;
+        justify-content: center;
+    }
+}
